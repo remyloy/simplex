@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DownhillSimplex", "DownhillSimplex\DownhillSimplex.fsproj", "{F35F3627-5A80-4D4C-B99C-94CBB76C0E53}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DownhillSimplex.Tests", "DownhillSimplex.Tests\DownhillSimplex.Tests.fsproj", "{824ECF91-9F13-481B-A31E-FE640DBCEB94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35F3627-5A80-4D4C-B99C-94CBB76C0E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35F3627-5A80-4D4C-B99C-94CBB76C0E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35F3627-5A80-4D4C-B99C-94CBB76C0E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35F3627-5A80-4D4C-B99C-94CBB76C0E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824ECF91-9F13-481B-A31E-FE640DBCEB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824ECF91-9F13-481B-A31E-FE640DBCEB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824ECF91-9F13-481B-A31E-FE640DBCEB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824ECF91-9F13-481B-A31E-FE640DBCEB94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
