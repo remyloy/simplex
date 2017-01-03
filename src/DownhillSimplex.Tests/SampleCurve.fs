@@ -32,7 +32,7 @@ module SampleCurve =
         (p1, p2)
     
     let contribution1 : Grid -> ContributionParameter -> Function = 
-        fun grid ps -> Function.simple (fun x -> ps.a + ps.b * x + ps.c * (x ** 2.0)) grid
+        fun grid ps -> Function.simple (fun x -> ps.a + ps.b * x + ps.c * (x * x)) grid
     let contribution2 : Grid -> ContributionParameter -> Function = 
         fun grid ps -> Function.simple (fun x -> ps.a / (ps.b + x) + ps.c * sqrt x) grid
     
@@ -45,7 +45,7 @@ module SampleCurve =
     let residual : Grid -> Function -> (ContributionParameter * ContributionParameter) -> float = 
         fun grid (Function dataFunction) (p1, p2) -> 
             let (Function evaluated) = evaluateFunction grid (p1, p2)
-            let cost = Array.map2 (fun t s -> (t - s) ** 2.0) dataFunction evaluated |> Array.sum
+            let cost = Array.map2 (fun t s -> (t - s) * (t - s)) dataFunction evaluated |> Array.sum
             cost
     
     let converters = 
